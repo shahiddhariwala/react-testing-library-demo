@@ -16,7 +16,7 @@ describe("Counter test suite", () => {
     expect(countText).toBeInTheDocument();
   });
 
-  test("render count as 1 on click of button", async () => {
+  test("render count as not 0 on click of button", async () => {
     // Arrange
     render(<Counter />);
 
@@ -26,7 +26,22 @@ describe("Counter test suite", () => {
     screen.debug(addBtn);
 
     // Assert
-    const countText = screen.getByText("1");
+    const countText = screen.queryByText("0");
+    expect(countText).is.null;
+  });
+
+  test("render count as 2 on click of button two times", async () => {
+    // Arrange
+    render(<Counter />);
+
+    // Act
+    const addBtn = screen.getByTestId("increment-btn");
+    await userEvent.click(addBtn);
+    await userEvent.click(addBtn);
+    screen.debug(addBtn);
+
+    // Assert
+    const countText = screen.getByText("2");
     expect(countText).toBeInTheDocument();
   });
 

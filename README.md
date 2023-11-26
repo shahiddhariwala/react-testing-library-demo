@@ -29,3 +29,5 @@ yarn add @testing-library/jest-dom @testing-library/react @testing-library/react
 
 # Rule for writing unit test 
 White writing unit testing remember 3 AAA, Arrange then Act and then Asset
+
+[Counter.test.jsx](./src/components/Counter.test.jsx)
