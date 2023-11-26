@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <h1>Shahid Dhariwala</h1>
+      <div className="text-6xl italic mb-8">Shahid Dhariwala Learning RTL</div>
       <Counter />
     </div>
   );

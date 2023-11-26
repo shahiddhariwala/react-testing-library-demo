@@ -9,7 +9,7 @@ describe("Testing App Component", () => {
 
     // Act [Nothing]
     // Assert
-    const title = screen.getByText("Shahid Dhariwala");
+    const title = screen.getByText("Shahid Dhariwala", { exact: false });
     screen.debug(title);
     expect(title).toBeInTheDocument();
   });
