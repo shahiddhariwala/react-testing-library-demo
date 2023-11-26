@@ -1,6 +1,6 @@
 # React Testing Library Demo
 
-![Screenshot](./gitassets/Screenshot%202023-11-27%20001639.png)
+![Screenshot](./gitassets/ss.png)
 ## Download the required packages 
 
 ```
