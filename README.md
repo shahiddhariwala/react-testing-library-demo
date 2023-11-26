@@ -24,3 +24,7 @@ yarn add @testing-library/jest-dom @testing-library/react @testing-library/react
     import "@testing-library/jest-dom";
 
     ```
+
+
+# Rule for writing unit test 
+White writing unit testing remember 3 AAA, Arrange then Act and then Asset
